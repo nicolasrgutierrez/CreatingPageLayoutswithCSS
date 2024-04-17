@@ -9,17 +9,18 @@ body {
 
 }
 
-/* grid rules */
+/* GRID RULES */
 .row {clear: both;}
+.limited {
+    max-width: 1140px; 
+    margin: auto;
+}
 
-.column {float: left;}
+.column {float: left; padding: 0 2vw; margin: 0 0 .75rem 0;}
+.small-12 {width: 100%;}
+.small-6{width: 50%;}
 
-.small-12 {width: 100%; padding: 0 2vw; margin: 0 0 .75rem 0;}
-
-.limited {max-width: 1024px; margin: auto;}
-
-
-/* header rules */
+/* HEADER RULES */
 
 header {background-color: #9b87b8;
 }
@@ -46,6 +47,8 @@ header h2 {
     padding: .2rem 0 0 0;
     font-size: 1.05rem;
 }
+
+/* NAVIGATION RULES */
 
 button#hamburgerBtn { 
     background: none;
@@ -77,7 +80,49 @@ main img {
     height: auto;
 }
 
+/* PAGE TITLE */
+main h1, main h3 {
+    color: #9b87b8;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+}
 
+main h1 {
+    font-size: 2rem;
+}
+
+main h3 {
+    font-size: 1.2rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 0 0 .3rem 0;
+}
+
+/* SPECIALS STYLING */
+
+.labeled {
+    position: relative;
+}
+
+.labeled h6, .labeled p {
+    position: absolute;
+    background-color: rgba(255,255,255,.7);
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;   
+}
+.labeled h6 {
+    top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.labeled p {
+    bottom: 0;
+    font-weight: 700;
+    color: #b00;
+}
 
 footer{
     background-color: #9b87b8;
